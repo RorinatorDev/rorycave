@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+        background-image: URL(checkerboarddark.png);
+      }
+      .mainText {
+        max-width: 700px;
+        height: 25.5px;
+        padding: 7px;
+        border: 10px solid white;
+        border-radius: 20px;
+        font-family: Monospace;
+        font-weight: 900;
+        font-size: 20px;
+        color: white;
+        border-style: outset;
+        background-image: url('checkerboardlight.png');
+      }
+      superFixedText {
+        position: fixed;
+        font-family: monospace;
+        font-weight: 250;
+      }
+      .content {
+        border-style: ridge;
+        font-family: Monospace;
+        font-weight: 500;
+        color: white;
+        font-size: 15px;
+        min-height: 10px;
+        max-width: 500px;
+        background-image: url('checkerboardlight.png');
+        margin-left: 220px;
+        border: 5px solid white;
+      }
+      p {
+        font-family: Monospace;
+        font-weight: 500;
+        color: white;
+        font-size: 15px;
+      }
+      .leftBar {
+        border-style: ridge;
+        font-family: Monospace;
+        font-weight: 500;
+        color: white;
+        font-size: 15px;
+        min-height: 10px;
+        width: 200px;
+        background-image: url('checkerboardlight.png');
+        float: left;
+        display: inline-block;
+      }
+      .sidebarContent {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-style: ridge;
+        font-family: Monospace;
+        font-weight: 500;
+        color: white;
+        font-size: 15px;
+        min-height: 10px;
+        box-sizing: border-box;
+        float: left;
+        clear: left;
+        width: 206px;
+        background-image: url('checkerboardlight.png');
+      }
+      .scrollText {
+        width: 80.8%;
+        overflow: hidden;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 40px;
+        font-family: Monospace;
+        white-space: nowrap;
+      }
+      .tickerText {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scroll 25s linear infinite;
+      }
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      
+      .centerWrapper {
+        width: 900px;
+        margin: auto;
+      }
+      a {
+        font-size: 10px;
+        font-weight: 50px;
+        color: white;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <title>Rory's Cave</title>
+    <link rel="icon" type="image/x-icon" href="rorysicon2-modified.webp">
+    <div class="centerWrapper">
+      
+      <img src="roryscavew.webp"><br>
+      <br>
+      
+      <div class="mainText">
+        <center>Hello! Welcome to my little cave. Don't mind the bugs.</center>
+      </div>
+      
+      <div class="scrollText">
+        <div class="tickerText">
+          Welcome to my little cave! And check out this cool scrolling text I made. Really gives a site some life, huh? :)<img src="the-largest-88x31-collection-2.png"><img src="adobe_getflash4.gif"><img src="firefox_now.png"><img src="besteyes2.gif"><img src="smile.png"><img src="artix.png"><img src="neocitiesnow.png"><img src="nintendo-3ds.png">
+        </div>
+      </div>
+      
+      <div class="leftBar">
+        <center>
+          <b>Sidebar of Doom</b>
+          <br>
+          <a href="blogs.html">Old Blogs</a>
+          <br>
+          <img src="000 Y2K NEOCITIES BUTTON 01.png">
+          <img src="adv_rar2.gif">
+          <a href="https://rorycave.neocities.org/"><img src="rorycave2.png"></a>
+          <img src="addchannel.gif">
+          <img src="a2600now.gif">
+          <img src="againstframes.gif">
+          <img src="the-largest-88x31-collection-2.png">
+          <img src="adobe_getflash4.gif">
+          <img src="firefox_now.png">
+          <img src="besteyes2.gif">
+          <img src="smile.png">
+          <img src="artix.png">
+          <img src="neocitiesnow.png">
+          <img src="nintendo-3ds.png">
+          <img src="ravenow.gif">
+          <img src="catscape3.gif">
+          <img src="geocities_area_51.gif">
+          <img src="candybarsnow.gif">
+          <img src="mswinmediaplayer8.gif">
+          <img src="delete_instagram.gif">
+          <img src="neocities (copy 2).gif">
+          <img src="yesterweb.png">
+          <img src="ka88x31.gif">
+          <img src="macos8.gif">
+          <img src="ebay3.gif">
+          <img src="rar_whit_move.gif">
+          <img src="dreamcast.gif">
+          <img src="y2k.png">
+          <img src="geocities_silicon_valley01.gif">
+          <img src="bitmap.gif">
+          <img src="christnow.gif">
+          <img src="drpepper.gif">
+          <img src="godblessbutton1.gif">
+          <img src="notepad-logo3.gif">
+          <img src="penguin.gif" width="180">
+        </center>
+      </div>
+      
+      <div class="sidebarContent">
+        <center><p id="termsText">Do you agree to the terms and conditions?</p>
+        <button class="agreeButton" onclick="agreeButtonClicked()">Yes</button></center>
+        <script>
+          const agreePrompts = [
+            "Do you agree to the terms and conditions?", 
+            "Do you love my website?",
+            "Am I the coolest person ever?",
+            "Do you look funny?",
+            "Do you want to sign up for our newsletter?", 
+            "Would you like to donate $10 to dig a well in Africa?", 
+            "Would you like to accept Jesus Christ as your lord and savior?",
+            "Would you like to sell your liver to Bill Richards in Omaha, Nebraska?",
+            "Do you accept the endless dark void of space?",
+            "What is the meaning of life?",
+            "Why am I here?",
+            "What are the odds that you got here at this exact time and moment?",
+            "What else is there besides sleeping, eating, working and breathing?",
+            "...",
+            "....",
+            ".........",
+            "Would you like to rate us five stars on Neocities?"
+            
+            ]
+          let timesAgreed = 0;
+          
+          function agreeButtonClicked(){
+              timesAgreed++;
+              document.getElementById('termsText').textContent = agreePrompts[timesAgreed];
+              if (timesAgreed > agreePrompts.length - 1) {
+                document.getElementById('termsText').textContent = 'The End'
+              };
+          };
+        </script>
+      </div>
+      
+      <div class="content">
+        <u><b>March 8, 2026</b><br></u>
+        Hello! Today is my 3rd day of working on this website project, and I finally went through with my promises. I created my first JavaScript 'game'! Well, its not exactly a game, but I'd say its good enough. Its the one on the bottom left of the screen. It's about accepting my terms and conditions. (Spoiler alert: don't.) So that is the humble beginnings of this website's JavaScript implimentations. I will probably make an entirely new tab for the games or just put some small but fun ones on the side bar like you just saw. So, that's pretty much it for now. Everything else I added today was small bug fixes and graphical improvements. So, thanks for reading, and I'll see you later!
+      </div>
+      
+      <br>
+      
+      <div class="content">
+        <u><b>More about the Site!</b><br></u>
+        Bonjour! I was thinking, and I want to share with you a bit on why I wanted to create my own website! My main reason is that I do not like social media at all. It wastes your time when you can be being productive, creative, or even just thinking. It is taking your attention span and showing you all of this terrible stuff. And even if you try starting your own social account, you will find that you have almost ZERO control with it. But, with my own website, none of these problems exist! I have <b>MY</b> own site with the stuff that <b>I WANT TO SEE</b> without all of the bad stuff. So, instead of scrolling instagram, start a neocities site!<br><br><center><img src="delete_instagram.gif"></center><br>Yeah, I love that button. That's also another thing I love about doing this website! I can create and see other peoples buttons. They are like mini ads or just little messages written on to an 88x31 area. I made a few of my own so far, too! So, thats about it. Thank you for spending your time reading about what I believe and have a great day!
+      </div>
+      
+    </div>
+    
+    </div>
+    
+  </body>
+</html>
