@@ -100,6 +100,23 @@
           };
         </script>
       </div>
+
+      <br>
+
+      <div class="sidebarContent">
+        <p id="stocksPrice"></p>
+        <script>
+          async function waithalf() {
+            await sleep(500);
+          }
+          let stocksPriceVar = 0;
+          while (true) {
+            document.getElementById('stocksPrice').textContent = stocksPriceVar;
+            console.log(1)
+            waithalf();
+          }
+        </script>
+      </div>
       
       <div class="content">
         <u><b>March 8, 2026</b><br></u>
