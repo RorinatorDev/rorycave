@@ -81,11 +81,12 @@ p {
 }
 
 .scrollText {
-    width: 75%;
+    width: 100%;
     overflow: hidden;
     background: transparent;
     border: none;
     white-space: nowrap;
+    line-height: 1;
 }
 
 .tickerText {
