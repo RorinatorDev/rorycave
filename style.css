@@ -80,13 +80,10 @@ p {
 }
 
 .scrollText {
-    width: 80.8%;
+    width: 100%;
     overflow: hidden;
     background: transparent;
     border: none;
-    color: white;
-    font-size: 40px;
-    font-family: Monospace;
     white-space: nowrap;
 }
 
