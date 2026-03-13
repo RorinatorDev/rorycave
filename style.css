@@ -81,7 +81,7 @@ p {
 }
 
 .scrollText {
-    width: 100%;
+    width: 75%;
     overflow: hidden;
     background: transparent;
     border: none;
