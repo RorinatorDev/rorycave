@@ -107,18 +107,17 @@
         <button class="startStocksGameButton" onclick="startStocksGame()">Start/Restart Game!</button>
         <p id="stocksPrice">The Stocks Game! *BETA*</p>
         <script>
-          async function waithalf() {
-            await sleep(500);
-          }
           let stocksPriceVar = 0;
+          let gameloop;
+
           function startStocksGame() {
-            while (true) {
-            document.getElementById('stocksPrice').textContent = stocksPriceVar;
-            ramVar = Math.random();
-            console.log(ramVar);
-            stocksPriceVar = ramVar;
-            task.wait(1);
-          }
+            clearInterval(gameloop);
+            gameLoop = setInterval(function () {
+
+              let ramVar = Math.random()
+              stocksPriceVar = ramVar;
+              document.getElementById('stocksPrice').textContent = stocksPriceVar
+            }, (Math.random() * (3 - 1) + 1) * 1000);
           }
         </script>
       </div>
