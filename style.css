@@ -24,6 +24,7 @@ superFixedText {
 
 #tickerTextId {
     display: inline-block;
+    transform: translateX(100%);
     padding-left: 100%;
     animation: scroll 5s linear infinite;
     color: white;
